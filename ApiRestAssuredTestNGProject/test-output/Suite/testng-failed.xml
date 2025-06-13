@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testCase.SwaggerAPI">
+        <methods>
+          <include name="GetAllUsersTest" invocation-numbers="6"/>
+          <include name="closeExcel"/>
+          <include name="GetUserByIdTest" invocation-numbers="3"/>
+          <include name="DeleteUserByFNameTest" invocation-numbers="5 6 7"/>
+          <include name="setupExcel"/>
+          <include name="UpdateUser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCase.SwaggerAPI -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

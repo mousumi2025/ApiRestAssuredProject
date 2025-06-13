@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="62" passed="60" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-12T22:48:28 CDT" name="Default suite" finished-at="2025-06-12T22:48:54 CDT" duration-ms="26279">
+    <groups>
+    </groups>
+    <test started-at="2025-06-12T22:48:28 CDT" name="Default test" finished-at="2025-06-12T22:48:54 CDT" duration-ms="26279">
+      <class name="testCase.SwaggerAPI">
+        <test-method is-config="true" signature="setupExcel()[pri:0, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:28 CDT" name="setupExcel" finished-at="2025-06-12T22:48:29 CDT" duration-ms="949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExcel -->
+        <test-method signature="GetAllUsersTest(java.util.Map)[pri:1, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:29 CDT" name="GetAllUsersTest" data-provider="GetUser" finished-at="2025-06-12T22:48:31 CDT" duration-ms="2437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=200, Linemsg=HTTP/1.1 200 OK, Scenario=Valid}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUsersTest -->
+        <test-method signature="GetAllUsersTest(java.util.Map)[pri:1, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:31 CDT" name="GetAllUsersTest" data-provider="GetUser" finished-at="2025-06-12T22:48:32 CDT" duration-ms="403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=EmptyUsr}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUsersTest -->
+        <test-method signature="GetAllUsersTest(java.util.Map)[pri:1, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:32 CDT" name="GetAllUsersTest" data-provider="GetUser" finished-at="2025-06-12T22:48:32 CDT" duration-ms="381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=EmptyPswd}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUsersTest -->
+        <test-method signature="GetAllUsersTest(java.util.Map)[pri:1, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:32 CDT" name="GetAllUsersTest" data-provider="GetUser" finished-at="2025-06-12T22:48:32 CDT" duration-ms="374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=NoAuth}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUsersTest -->
+        <test-method signature="GetAllUsersTest(java.util.Map)[pri:1, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:32 CDT" name="GetAllUsersTest" data-provider="GetUser" finished-at="2025-06-12T22:48:32 CDT" duration-ms="3" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=IncorrectEndPoint}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping this test due to a specific condition.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping this test due to a specific condition.
+at testCase.SwaggerAPI.GetAllUsersTest(SwaggerAPI.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUsersTest -->
+        <test-method signature="GetAllUsersTest(java.util.Map)[pri:1, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:32 CDT" name="GetAllUsersTest" data-provider="GetUser" finished-at="2025-06-12T22:48:33 CDT" duration-ms="296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=404, Linemsg=HTTP/1.1 404 Not Found, Scenario=IncorrectBaseURL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUsersTest -->
+        <test-method signature="GetAllUsersTest(java.util.Map)[pri:1, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:33 CDT" name="GetAllUsersTest" data-provider="GetUser" finished-at="2025-06-12T22:48:33 CDT" duration-ms="4" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=404, Linemsg=HTTP/1.1 404 Not Found, Scenario=NonExistingUser}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping this test due to a specific condition.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping this test due to a specific condition.
+at testCase.SwaggerAPI.GetAllUsersTest(SwaggerAPI.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllUsersTest -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:33 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:33 CDT" duration-ms="470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Evans, LastName=Moris, Phno=7357950299, Email=Moris111@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=EmptyUsr}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:33 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:34 CDT" duration-ms="376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Dane, LastName=Moris, Phno=7357950300, Email=Moris112@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=EmptyPswd}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:34 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:34 CDT" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Powel, LastName=Moris, Phno=9357950302, Email=Moris113@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=NoAuth}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:34 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:34 CDT" duration-ms="439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=John, LastName=Moris, Phno=9357950301, Email=Moris114@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=404, Linemsg=HTTP/1.1 404 Not Found, Scenario=IncorrectEndPoint}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:34 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:35 CDT" duration-ms="264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Erik, LastName=Moris, Phno=9357950303, Email=Moris115@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=404, Linemsg=HTTP/1.1 404 Not Found, Scenario=IncorrectBaseURL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:35 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:35 CDT" duration-ms="374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Thiru, LastName=Vasakam, Phno=9641025016, Email=thiruvasakam2025@gmail.com, Plot=10A-01, Street=Swamymalai, State=thanadu, Country=India, Zip=12345, Code=409, Linemsg=HTTP/1.1 409 Conflict, Scenario=ExistingUser}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:35 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:35 CDT" duration-ms="363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Jim, LastName=Moris, Phno=9357950305, Email=Moris116@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=409, Linemsg=HTTP/1.1 409 Conflict, Scenario=NumericFirstname}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:35 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:36 CDT" duration-ms="382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Jorden@, LastName=Moris, Phno=9357950306, Email=Moris117@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=CharFirstName}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:36 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:36 CDT" duration-ms="369" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=, LastName=Moris, Phno=9357950307, Email=Moris118@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=EmptyFirstName}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:36 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:37 CDT" duration-ms="402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Robert, LastName=Ethan15, Phno=9357950308, Email=Moris119@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=NumericLastname}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:37 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:37 CDT" duration-ms="389" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Betty, LastName=Ethan#$, Phno=9357950309, Email=Moris1110@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=CharLastName}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:37 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:37 CDT" duration-ms="390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Mark, LastName=, Phno=9357950310, Email=Moris1111@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=EmptyLastName}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:37 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:38 CDT" duration-ms="406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Andrew, LastName=Moris, Phno=9357950311, Email=, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=EmailEmpty}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:38 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:38 CDT" duration-ms="372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Keith, LastName=Moris, Phno=9357950312, Email=Moris11, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=InvalidEmailFormat}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:38 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:39 CDT" duration-ms="366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Joe, LastName=Moris, Phno=3086000009000, Email=Moris1112@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=PhoneGrt10Digit}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:39 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:39 CDT" duration-ms="384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Robin, LastName=Moris, Phno=99127111, Email=Moris1113@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=PhoneLess10Digit}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:39 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:40 CDT" duration-ms="990" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Moris, Phno=7365432285, Email=ElizabethMoris@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=201, Linemsg=HTTP/1.1 201, Scenario=Valid}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="CreateUser(java.util.Map)[pri:2, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:40 CDT" name="CreateUser" data-provider="PostUser" finished-at="2025-06-12T22:48:40 CDT" duration-ms="394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Sunny, LastName=Moris, Phno=9865432286, Email=SunnyMoris@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=409, Linemsg=HTTP/1.1 409 Conflict, Scenario=ValidNam}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUser -->
+        <test-method signature="GetUserByFNameTest(java.util.Map)[pri:3, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:40 CDT" name="GetUserByFNameTest" data-provider="GetUser" finished-at="2025-06-12T22:48:41 CDT" duration-ms="392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=200, Linemsg=HTTP/1.1 200 OK, Scenario=Valid}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByFNameTest -->
+        <test-method signature="GetUserByFNameTest(java.util.Map)[pri:3, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:41 CDT" name="GetUserByFNameTest" data-provider="GetUser" finished-at="2025-06-12T22:48:41 CDT" duration-ms="384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=EmptyUsr}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByFNameTest -->
+        <test-method signature="GetUserByFNameTest(java.util.Map)[pri:3, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:41 CDT" name="GetUserByFNameTest" data-provider="GetUser" finished-at="2025-06-12T22:48:42 CDT" duration-ms="388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=EmptyPswd}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByFNameTest -->
+        <test-method signature="GetUserByFNameTest(java.util.Map)[pri:3, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:42 CDT" name="GetUserByFNameTest" data-provider="GetUser" finished-at="2025-06-12T22:48:42 CDT" duration-ms="386" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=NoAuth}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByFNameTest -->
+        <test-method signature="GetUserByFNameTest(java.util.Map)[pri:3, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:42 CDT" name="GetUserByFNameTest" data-provider="GetUser" finished-at="2025-06-12T22:48:42 CDT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=IncorrectEndPoint}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByFNameTest -->
+        <test-method signature="GetUserByFNameTest(java.util.Map)[pri:3, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:42 CDT" name="GetUserByFNameTest" data-provider="GetUser" finished-at="2025-06-12T22:48:42 CDT" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=404, Linemsg=HTTP/1.1 404 Not Found, Scenario=IncorrectBaseURL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByFNameTest -->
+        <test-method signature="GetUserByFNameTest(java.util.Map)[pri:3, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:42 CDT" name="GetUserByFNameTest" data-provider="GetUser" finished-at="2025-06-12T22:48:43 CDT" duration-ms="378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=404, Linemsg=HTTP/1.1 404 Not Found, Scenario=NonExistingUser}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByFNameTest -->
+        <test-method signature="GetUserByIdTest(java.util.Map)[pri:4, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:43 CDT" name="GetUserByIdTest" data-provider="GetUser" finished-at="2025-06-12T22:48:43 CDT" duration-ms="381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=200, Linemsg=HTTP/1.1 200 OK, Scenario=Valid}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByIdTest -->
+        <test-method signature="GetUserByIdTest(java.util.Map)[pri:4, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:43 CDT" name="GetUserByIdTest" data-provider="GetUser" finished-at="2025-06-12T22:48:43 CDT" duration-ms="384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=EmptyUsr}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByIdTest -->
+        <test-method signature="GetUserByIdTest(java.util.Map)[pri:4, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:43 CDT" name="GetUserByIdTest" data-provider="GetUser" finished-at="2025-06-12T22:48:44 CDT" duration-ms="381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=EmptyPswd}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByIdTest -->
+        <test-method signature="GetUserByIdTest(java.util.Map)[pri:4, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:44 CDT" name="GetUserByIdTest" data-provider="GetUser" finished-at="2025-06-12T22:48:44 CDT" duration-ms="377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=NoAuth}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByIdTest -->
+        <test-method signature="GetUserByIdTest(java.util.Map)[pri:4, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:44 CDT" name="GetUserByIdTest" data-provider="GetUser" finished-at="2025-06-12T22:48:45 CDT" duration-ms="379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=IncorrectEndPoint}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByIdTest -->
+        <test-method signature="GetUserByIdTest(java.util.Map)[pri:4, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:45 CDT" name="GetUserByIdTest" data-provider="GetUser" finished-at="2025-06-12T22:48:45 CDT" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=404, Linemsg=HTTP/1.1 404 Not Found, Scenario=IncorrectBaseURL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByIdTest -->
+        <test-method signature="GetUserByIdTest(java.util.Map)[pri:4, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:45 CDT" name="GetUserByIdTest" data-provider="GetUser" finished-at="2025-06-12T22:48:45 CDT" duration-ms="394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=404, Linemsg=HTTP/1.1 404 Not Found, Scenario=NonExistingUser}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUserByIdTest -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:45 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:46 CDT" duration-ms="528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Morisss, Phno=7365432285, Email=ElizabethMoris@gmail.com, Plot=10A-01, Street=kingfisherr, State=texas, Country=USA, Zip=78765, Code=200, Linemsg=HTTP/1.1 200 OK, Scenario=Valid}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:46 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:46 CDT" duration-ms="557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth#, LastName=Moris, Phno=9183618477, Email=ElizabethMoris2@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=CharFirstName}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:46 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:47 CDT" duration-ms="381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=, LastName=Moris, Phno=9183618478, Email=ElizabethMoris3@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=EmptyFirstName}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:47 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:47 CDT" duration-ms="379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Moris12, Phno=9183618479, Email=ElizabethMoris3@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=NumericLastname}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:47 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:47 CDT" duration-ms="401" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Moris$, Phno=9183618480, Email=ElizabethMoris4@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=CharLastName}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:47 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:48 CDT" duration-ms="413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=, Phno=9183618481, Email=ElizabethMoris5@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=EmptyLastName}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:48 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:48 CDT" duration-ms="401" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Moris, Phno=8.79184E+11, Email=ElizabethMoris6@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=PhoneGrt10Digit}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:48 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:49 CDT" duration-ms="405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Moris, Phno=45938476, Email=ElizabethMoris7@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=PhoneLess10Digit}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:49 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:49 CDT" duration-ms="368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Moris, Phno=, Email=ElizabethMoris8@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=EmptyPhone}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:49 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:49 CDT" duration-ms="370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Moris, Phno=9183618483, Email=, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=EmailEmpty}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:49 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:50 CDT" duration-ms="366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Moris, Phno=9183618484, Email=ElizabethMoris9@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=EmptyUsr}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:50 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:50 CDT" duration-ms="374" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Moris, Phno=9183618485, Email=ElizabethMoris10@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=EmptyPswd}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:50 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:51 CDT" duration-ms="418" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Moris, Phno=9183618486, Email=ElizabethMoris11@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=IncorrectBaseURL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:51 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:51 CDT" duration-ms="404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Moris, Phno=9183618487, Email=ElizabethMoris12@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=NoAuth}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="UpdateUser(java.util.Map)[pri:5, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:51 CDT" name="UpdateUser" data-provider="UpdateUser" finished-at="2025-06-12T22:48:51 CDT" duration-ms="379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{FirstName=Elizabeth, LastName=Moris, Phno=9183618488, Email=ElizabethMoris13@gmail.com, Plot=10A-01, Street=kingfisher, State=texas, Country=USA, Zip=78765, Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=IncorrectEndPoint}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateUser -->
+        <test-method signature="DeleteUserByIdTest(java.util.Map)[pri:6, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:51 CDT" name="DeleteUserByIdTest" data-provider="DeleteUser" finished-at="2025-06-12T22:48:51 CDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=InvalidChar}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserByIdTest -->
+        <test-method signature="DeleteUserByIdTest(java.util.Map)[pri:6, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:51 CDT" name="DeleteUserByIdTest" data-provider="DeleteUser" finished-at="2025-06-12T22:48:52 CDT" duration-ms="385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=EmptyUsr}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserByIdTest -->
+        <test-method signature="DeleteUserByIdTest(java.util.Map)[pri:6, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:52 CDT" name="DeleteUserByIdTest" data-provider="DeleteUser" finished-at="2025-06-12T22:48:52 CDT" duration-ms="373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=EmptyPswd}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserByIdTest -->
+        <test-method signature="DeleteUserByIdTest(java.util.Map)[pri:6, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:52 CDT" name="DeleteUserByIdTest" data-provider="DeleteUser" finished-at="2025-06-12T22:48:53 CDT" duration-ms="367" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=401, Linemsg=HTTP/1.1 401 Unauthorized, Scenario=NoAuth}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserByIdTest -->
+        <test-method signature="DeleteUserByIdTest(java.util.Map)[pri:6, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:53 CDT" name="DeleteUserByIdTest" data-provider="DeleteUser" finished-at="2025-06-12T22:48:53 CDT" duration-ms="240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=404, Linemsg=HTTP/1.1 404 Not Found, Scenario=IncorrectBaseURL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserByIdTest -->
+        <test-method signature="DeleteUserByIdTest(java.util.Map)[pri:6, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:53 CDT" name="DeleteUserByIdTest" data-provider="DeleteUser" finished-at="2025-06-12T22:48:53 CDT" duration-ms="371" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=400, Linemsg=HTTP/1.1 400 Bad Request, Scenario=IncorrectEndPoint}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserByIdTest -->
+        <test-method signature="DeleteUserByIdTest(java.util.Map)[pri:6, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:53 CDT" name="DeleteUserByIdTest" data-provider="DeleteUser" finished-at="2025-06-12T22:48:54 CDT" duration-ms="397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=404, Linemsg=HTTP/1.1 404 Not Found, Scenario=NonExistingUser}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserByIdTest -->
+        <test-method signature="DeleteUserByIdTest(java.util.Map)[pri:6, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:54 CDT" name="DeleteUserByIdTest" data-provider="DeleteUser" finished-at="2025-06-12T22:48:54 CDT" duration-ms="395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Code=200, Linemsg=HTTP/1.1 200 OK, Scenario=Valid}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteUserByIdTest -->
+        <test-method is-config="true" signature="closeExcel()[pri:0, instance:testCase.SwaggerAPI@df6620a]" started-at="2025-06-12T22:48:54 CDT" name="closeExcel" finished-at="2025-06-12T22:48:54 CDT" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeExcel -->
+      </class> <!-- testCase.SwaggerAPI -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
